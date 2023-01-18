@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import NavbarComp from './components/NavbarComp';
+import Card from './components/Card';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <NavbarComp/>
+     <Card title="Saumya Turaskar" desc="Html,Css,Bootsraps" button="Next" imgurl="https://images.pexels.com/photos/6479587/pexels-photo-6479587.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+     <Card title="Hey , Here Saumya " desc="Html,Css,Bootsraps" button="Start" imgurl="https://images.pexels.com/photos/6637370/pexels-photo-6637370.jpeg"/>
+     </> 
   );
 }
-
 export default App;
+
